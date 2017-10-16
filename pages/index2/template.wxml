@@ -1,0 +1,7 @@
+
+<!--wxml template-->
+<template name="staffName">
+  <view>
+   1.FirstName: {{firstName}}, 2.LastName: {{lastName}}
+  </view>
+</template>

@@ -1,0 +1,17 @@
+/** common.wxss **/
+.header-p,.footer-p {
+  padding:5px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 650;
+  color:springgreen;
+}
+.p{
+  padding:10px;
+  margin:5px;
+}
+.progress{
+  padding:10px;
+  margin:5px;
+}
+

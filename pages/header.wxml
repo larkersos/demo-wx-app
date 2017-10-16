@@ -1,0 +1,55 @@
+<!-- header.wxml -->
+<view class="header-p"> 
+header begin
+</view>
+<view class="section">
+  <view class="section__title">flex-direction: row-123</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">1</view>
+    <view class="flex-item bc_red">2</view>
+    <view class="flex-item bc_blue">3</view>
+  </view>
+</view>
+
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view </button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="45" color="{{item}}"/>
+  </block>
+</view>
+<view> 
+<progress percent="20" show-info class="progress" />
+<progress percent="40" show-info stroke-width="12" class="progress" />
+<progress percent="60" color="pink" class="progress" />
+<progress percent="80" active class="progress" />
+</view>
+
+<view class="header-p"> 
+header end
+</view>

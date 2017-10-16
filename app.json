@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index3/index3-2/index",
+     "pages/index/index",
+    "pages/index2/index2",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "WeChat 小程序练习",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+     "color": "#000000",
+     "selectedColor": "#FFFFFF",
+     "backgroundColor": "#A7E3F1",
+     "position":"botton",
+    "list": [{
+      "pagePath": "pages/index3/index3-2/index",
+      "text": "首页3"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },{
+      "pagePath": "pages/index2/index2",
+      "text": "信息"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile":60000,
+    "connectSocket":60000
+  },
+  "debug": true
+}

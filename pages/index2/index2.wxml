@@ -1,0 +1,41 @@
+<!--pages/index/index2.wxml-->
+<!--index.wxml-->
+
+<include src="../header.wxml"/>
+
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-nickname">{{userInfo.sex}}</text>
+  </view>
+  <!-- This is our View -->
+  <view class="userinfo-nickname"> {{name}} </view>
+  <button bindtap="changeName"> Click me! </button>
+
+  <button bindtap="changeTab"> Click me changeTab! </button>
+
+<!--wxml-->
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">{{itemName.name}}:{{idx+1}}
+ </view>
+<!--wxml-->
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>
+
+<!--wxml-->
+<import src="template.wxml"/>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  
+</view>
+
+<include src="../footer.wxml"/>
